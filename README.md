@@ -16,8 +16,22 @@ $ git config --global user.email "[email address]"
 $ git config --global color.ui auto
 ```
 
-### Shows us status of files compared to repository.
+## MAKE CHANGES
+
+### Lists all new or modified files to be commited
 $ git status
 
 ### Snapshots the file in preparation for versioning
-$ git add file
+$ git add [file]
+
+### Unstages the file, but preserve its contents
+$ git reset [file]
+
+### Shows file differences not yet staged
+$ git diff
+
+### Shows file differences between staging and the last file version
+$ git diff --staged
+
+### Records file snapshots permanently in version history
+$ git commit -m "[descriptive message]"
